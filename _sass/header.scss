@@ -1,0 +1,21 @@
+@import "_variables";
+
+header {
+    width: 100%;
+    background-color: $blue;
+
+    &.home {
+        img {
+            height: 100%;
+            @media (min-width: $desktopMinimum) {
+                max-width: $desktopMinimum;
+            }
+            @media (max-width: $desktopMinimum) {
+                max-width: 100%;
+                width: auto;
+            }
+
+        }
+        border-bottom: solid 0.5em $orange;
+    }
+}

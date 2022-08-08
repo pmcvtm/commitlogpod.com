@@ -1,0 +1,48 @@
+﻿main.home {
+
+  width: 100%;
+  height: 100%;
+  background-color: $lightGray;
+
+  .title h1 { color: $red; margin-top: 1rem; }
+  h1,h2,h3 {
+    @media (max-width: $desktopMinimum) { padding: 0 0.5rem 1rem 0.5rem; }
+  }
+  h2 { padding-top: 1em !important; color: $red;}
+
+  .callout {
+    background-color: $yellow;
+    height: 100%;
+
+    h2 { font-weight: bolder; }
+    
+    a {
+      display: inline;
+      text-align: center;
+      border: 1px solid $black;
+      border-radius: 0.6em;
+      padding: .1em .5em;
+
+      color: $blue;
+      text-decoration: none;
+      background-color: $white;
+
+      &:hover {
+        color: $white;
+        background-color: $blue;
+      }
+    }
+  }
+
+  div {
+    p, h1, h2 {
+      width: 90%;
+      max-width: 55rem;
+      @media (max-width: $desktopMinimum) { padding: 0 1rem 1rem 1rem; }
+
+      margin: auto;
+      padding-bottom: 1rem;
+      @include flex-grow(1);
+    }
+  }
+}

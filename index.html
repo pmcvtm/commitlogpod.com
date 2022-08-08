@@ -1,13 +1,38 @@
 ---
-layout: default
-title: {{ site.name }}
+layout: base
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<header class="home">
+  <img src="assets/banner.jpg" alt="title card with outline of a microphone and an illustration of a cool dude in a 70s patterned shirt and flip-up sunglasses, beside him the title which reads 'the commit log with Patrick McVeety-Mill'">
+</header>
+
+<main class="home">
+  <div class="title">
+    <h1>The Commit Log: a new podcast</h1>
+  </div>
+  <div class="spiel">
+    <p>
+      When it's time to share their work, developers make a <strong>commit</strong> to a repository which
+      contains everyone's changes in succession. Together these commits tell a story about who's involved,
+      when they're working, and what they were thinking. When it's time to hear that shared story, other
+      developers can look at <strong>The Commit Log</strong> to the scoop.
+    </p>
+    <p>
+      Host <a href="https://loudandabrasive.com/about">Patrick McVeety-Mill</a> interviews guests about their workday: what are they doing,
+      when are they doing it, who they do it with, and what hurts and helps throughout it.
+    </p>
+  </div>
+  <div class="callout">
+  <h2>In Search of Guests!</h2>
+    <p>
+      The Commit Log is getting up and running and we're in search of guests to interview.
+    </p>
+    <p>
+      If you work in, adjacent to, or around technology and are comfortable talking
+      about how you work and what you do throughout the day, give us a shout.
+    </p>
+    <p>
+      <a href="mailto:commitlogpod@pm.me">Contact Us</a>
+    </p>
+  </div>
+</main>

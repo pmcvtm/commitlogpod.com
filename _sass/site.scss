@@ -1,0 +1,55 @@
+@import "_flexbox";
+@import "_variables";
+
+html {
+    height: 100%;
+}
+
+body {
+    @include display-flex;
+    @include flex-direction(column);
+    @include flex-justify-content(space-between);
+    @include flex-align-items(center);
+    height: 100%;
+    margin: 0;
+
+    background: $white;
+    color: $black;
+    font-family: $regularFont;
+    font-size: 1.2em;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: $headingFont;
+    //color: $brown;
+    font-weight: lighter;
+}
+
+a { 
+    color: $green;
+    &:hover {
+        color: $citron;
+    }
+}
+
+.site-content {
+    width: 90%;
+    max-width: 55rem;
+    @media (max-width: $desktopMinimum) { padding: 0 1rem 1rem 1rem; }
+
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    @include flex-grow(1);
+
+    img {
+        @media (min-width: $desktopMinimum) { 
+            max-width: 900px;
+        }
+
+        @media (max-width: $desktopMinimum) { 
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+}

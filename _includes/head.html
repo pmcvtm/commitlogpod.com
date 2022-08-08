@@ -1,9 +1,12 @@
-<head>
-  <meta charset="UTF-8">
-  <title>{{ site.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#157878">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/cayman.css">
-</head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{% if page.title %}{{ page.title  | escape }} | {% endif %} {{ site.title | escape }}</title>
+<link rel="shortcut icon" type="image/x-icon" href="{{ "assets/favicon.png" | relative_url }}" >
+<link rel="stylesheet" href="{{ "/assets/normalize.css" | relative_url }}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
+<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+
+<script src="https://kit.fontawesome.com/69fa8fd1fe.js" crossorigin="anonymous"></script>
