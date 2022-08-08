@@ -1,5 +1,6 @@
 title: The Commit Log
 email: commitlogpod@pm.me
+tagline: Interview podcast about working yesterday in technology
 description: >-
   Podcast about working in technology and the human experience.
   Guests are interviewed about the past workday, sharing details
@@ -11,6 +12,7 @@ url: "https://commitlogpod.com"
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
